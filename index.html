@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="RunTogether — Blog d’un passionné de course à pied"
+    />
+    <!-- SEO / Social -->
+    <meta property="og:title" content="RunTogether — Accueil" />
+    <meta
+      property="og:description"
+      content="Conseils, tests, programme d’entraînement pour les coureurs. Rejoignez RunTogether."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://127.0.0.1:5500/" />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RunTogether — Accueil" />
+    <meta
+      name="twitter:description"
+      content="Conseils, tests, programme d’entraînement pour les coureurs."
+    />
+    <meta name="twitter:image" content="assets/images/og-image.jpg" />
+    <title>RunTogether — Accueil</title>
+    <link rel="canonical" href="https://www.runtogether.fr/" />
+    <meta name="theme-color" content="#0c3d5a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-top">
+        <a class="brand" href="index.html" aria-label="Aller à l’accueil">
+          <img
+            src="assets/images/Vector.png"
+            width="60"
+            height="60"
+            alt="Logo RunTogether"
+          />
+          <div class="brand-text">
+            <span class="brand-title">RunTogether</span>
+            <span class="brand-subtitle"
+              >Blog d’un passionné de course à pied</span
+            >
+          </div>
+        </a>
+        <div class="header-actions">
+          <form class="search" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+              />
+            </svg>
+            <label class="visually-hidden" for="q">Rechercher</label>
+            <input
+              id="q"
+              type="search"
+              placeholder="Rechercher"
+              aria-label="Rechercher"
+            />
+          </form>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-principal"
+          >
+            <span class="visually-hidden">Menu</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+          <nav
+            id="nav-principal"
+            class="nav"
+            aria-label="Navigation principale"
+          >
+            <a href="#conseil">Conseil</a>
+            <a href="#programme">Programme</a>
+            <a href="#tests">Test</a>
+            <a href="articles.html">Articles</a>
+            <a href="about.html">À propos</a>
+            <a href="#contact">Contact</a>
+            <div class="nav-extra" aria-label="Sections complémentaires">
+              <div class="nav-group">
+                <h4 class="nav-group-title">Le must de RunTogether</h4>
+                <ul>
+                  <li><a href="#">Conseils incontournables</a></li>
+                  <li><a href="#">Conseils débutants</a></li>
+                  <li><a href="#">Tests produits</a></li>
+                  <li><a href="#">Plans d’entraînements</a></li>
+                  <li><a href="#">La newsletter</a></li>
+                </ul>
+              </div>
+              <div class="nav-group">
+                <h4 class="nav-group-title">La boutique</h4>
+                <ul>
+                  <li><a href="#">T‑shirts RunTogether</a></li>
+                </ul>
+              </div>
+              <div class="nav-group">
+                <h4 class="nav-group-title">Les séries vidéos</h4>
+                <ul>
+                  <li><a href="#">S01 - DARK SIDE</a></li>
+                  <li><a href="#">S02 - (IM)PARFAIT</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="nav-backdrop" hidden></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="announcement" role="note">
+      <div class="container">
+        <p>
+          <strong
+            >Bienvenue sur RunTogether, votre terrain de jeu pour courir et
+            partager vos aventures</strong
+          >
+        </p>
+        <p class="announcement-sub">
+          Coaching et programmes adaptés aux runners de tous niveaux
+        </p>
+      </div>
+    </div>
+
+    <main id="contenu" class="site-main">
+      <h1 class="visually-hidden">RunTogether — Accueil</h1>
+
+      <!-- Section de bienvenue personnalisée -->
+      <section
+        class="welcome-section section"
+        aria-labelledby="titre-bienvenue"
+      >
+        <div class="container">
+          <h2 id="titre-bienvenue" class="section-kicker">
+            <span>Rejoignez la communauté</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+              />
+            </svg>
+          </h2>
+          <div class="welcome-form-container">
+            <form id="welcome-form" class="welcome-form" novalidate>
+              <div class="form-group">
+                <label for="name-input" class="form-label">
+                  Dites-nous votre prénom pour commencer :
+                </label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="name-input"
+                    class="form-input"
+                    placeholder="Votre prénom..."
+                    maxlength="30"
+                    autocomplete="given-name"
+                    aria-describedby="name-help"
+                  />
+                  <button
+                    type="submit"
+                    id="welcome-btn"
+                    class="btn btn-blue"
+                    disabled
+                  >
+                    👋 Dire bonjour
+                  </button>
+                </div>
+                <small id="name-help" class="form-help">
+                  Votre prénom restera privé et sera uniquement utilisé pour
+                  personnaliser votre expérience.
+                </small>
+              </div>
+            </form>
+            <div
+              id="welcome-message"
+              class="welcome-message"
+              aria-live="polite"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="articles" class="section" aria-labelledby="titre-articles">
+        <div class="container">
+          <h2 id="titre-articles" class="section-kicker">
+            <span>Articles récents</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 12h18M3 6h10M3 18h10" />
+            </svg>
+          </h2>
+          <div class="cards-grid">
+            <article class="card" data-category="actu" id="article-1">
+              <a class="card-media" href="article.html">
+                <picture>
+                  <source
+                    srcset="assets/images/image 1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/image 1.jpg"
+                    alt="Chaussure Brooks Ghost 17"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <span class="badge badge-green">Actu</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="article.html"
+                    >Découvrez la nouvelle Ghost 17 de chez Brooks</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="1"
+                        y="3"
+                        width="14"
+                        height="12"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M1 6h14M5 1v4M11 1v4"></path>
+                    </svg>
+                    <time datetime="2025-06-02">02 juin, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  La Brooks Ghost 17 arrive avec une mousse plus dynamique, un
+                  amorti renforcé à l'avant-pied et un drop...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="article.html">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-1"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-category="actu-produits" id="article-2">
+              <a class="card-media" href="#">
+                <picture>
+                  <source
+                    srcset="assets/images/Image 2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/image 2.jpg"
+                    alt="SCOTT Supertrac RC 3"
+                    width="600"
+                    height="400"
+                    fetchpriority="high"
+                    decoding="async"
+                  />
+                </picture>
+                <span class="badge badge-green">Actu produits</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >SCOTT Supertrac RC 3 : le test complet par Mathieu [PAROLE
+                    DE SPECIALISTE]</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="1"
+                        y="3"
+                        width="14"
+                        height="12"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M1 6h14M5 1v4M11 1v4"></path>
+                    </svg>
+                    <time datetime="2025-05-23">23 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Quand le trail appelle, il faut savoir y répondre avec les
+                  bonnes armes. C'est précisément dans cette...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-2"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-category="a-la-une" id="article-3">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 3.jpg"
+                  alt="FORERUNNER 570 et 970"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">À la une</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >FORERUNNER 570 et 970 : l’annonce surprise de GARMIN</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="1"
+                        y="3"
+                        width="14"
+                        height="12"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M1 6h14M5 1v4M11 1v4"></path>
+                    </svg>
+                    <time datetime="2025-05-23">23 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Garmin dévoile deux nouvelles montres GPS taillées pour les
+                  coureurs : la Forerunner 570 et la Forerunner...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-3"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Nouvelles cartes -->
+            <article class="card" data-category="entrainement" id="article-4">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 4.jpg"
+                  alt="Coureurs en pleine nature"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">Entrainement</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Réussir son premier trail : entrainement, équipement,
+                    conseils & erreurs à éviter</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="1"
+                        y="3"
+                        width="14"
+                        height="12"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M1 6h14M5 1v4M11 1v4"></path>
+                    </svg>
+                    <time datetime="2025-05-12">12 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Découvre comment réussir son premier trail grâce à nos
+                  conseils sur l'entrainement, l'équipement essentiel...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-4"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-category="a-la-une" id="article-5">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 5.jpg"
+                  alt="Semelle de running"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">À la une</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Semelle de running : le guide complet pour courir mieux,
+                    plus confortablement et sans douleur</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="1"
+                        y="3"
+                        width="14"
+                        height="12"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M1 6h14M5 1v4M11 1v4"></path>
+                    </svg>
+                    <time datetime="2025-05-06">06 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Améliorez vos performances et votre confort avec des semelles
+                  de running adaptées ! Découvrez pourquoi...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-5"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-category="a-la-une" id="article-6">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 6.jpg"
+                  alt="Résultat Sathoverte 2025"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">À la une</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#">Résultat Sathoverte 2025</a>
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="1"
+                        y="3"
+                        width="14"
+                        height="12"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M1 6h14M5 1v4M11 1v4"></path>
+                    </svg>
+                    <time datetime="2025-05-02">02 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Une nouvelle édition de la Sarthoverte vient de se dérouler,
+                  c'est le moement des résultats
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-6"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="conseil" class="section" aria-labelledby="titre-conseils">
+        <div class="container">
+          <h2 id="titre-conseils" class="section-kicker">
+            <span>Conseils</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 12h18M3 6h10M3 18h10" />
+            </svg>
+          </h2>
+          <div class="carousel">
+            <button class="carousel-btn prev" aria-label="Précédent">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15 6l-6 6 6 6" />
+              </svg>
+            </button>
+            <div class="carousel-track" id="track">
+              <article class="mini-card">
+                <picture>
+                  <source
+                    srcset="assets/images/Image 7.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/Image 7.jpg"
+                    class="img ph"
+                    alt="Les 8 bienfaits de la course pour la santé mentale"
+                    width="280"
+                    height="180"
+                    fetchpriority="high"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <time datetime="2025-04-03" class="mini-date">
+                  <svg
+                    class="icon-cal-mini"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                    <path d="M1 6h14M5 1v4M11 1v4" />
+                  </svg>
+                  03 avril, 2025
+                </time>
+                <h3 class="mini-title">
+                  Les 8 bienfaits de la course pour la santé mentale
+                </h3>
+                <div>
+                  <p class="card-excerpt">
+                    La course à pied offre de nombreux bienfaits pour la santé
+                    mentale : réduction du stress, amélioration...
+                  </p>
+                </div>
+              </article>
+              <article class="mini-card">
+                <img
+                  src="assets/images/Image 8.jpg"
+                  class="img ph"
+                  alt="Les gels énergétiques OVERTIMS : tout ce qu'il faut savoir !"
+                  width="280"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <time datetime="2025-03-07" class="mini-date">
+                  <svg
+                    class="icon-cal-mini"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                    <path d="M1 6h14M5 1v4M11 1v4" />
+                  </svg>
+                  07 mars, 2025
+                </time>
+                <h3 class="mini-title">
+                  Les gels énergétiques OVERTIMS : tout ce qu'il faut savoir !
+                </h3>
+                <p class="card-excerpt">
+                  Vous courrez " à vide" et ressentez des difficultés après 15km
+                  de course ou sur vos séances de fractionné...
+                </p>
+              </article>
+              <article class="mini-card">
+                <img
+                  src="assets/images/Image 9.png"
+                  class="img ph"
+                  alt="La respiration en course à pied, comment mieux l'appréhender ?"
+                  width="280"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <time datetime="2025-02-05" class="mini-date">
+                  <svg
+                    class="icon-cal-mini"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                    <path d="M1 6h14M5 1v4M11 1v4" />
+                  </svg>
+                  05 février, 2025
+                </time>
+                <h3 class="mini-title">
+                  La respiration en course à pied, comment mieux l'appréhender ?
+                </h3>
+                <p class="card-excerpt">
+                  Parce que mieux courir passe aussi par une bonne gestion de la
+                  respiration, Léorilne CHAMP, membre du team...
+                </p>
+              </article>
+              <article class="mini-card">
+                <img
+                  src="assets/images/Image 10.jpg"
+                  class="img ph"
+                  alt="courir pendant ses règles"
+                  width="280"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <time datetime="2025-02-02" class="mini-date">
+                  <svg
+                    class="icon-cal-mini"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                    <path d="M1 6h14M5 1v4M11 1v4" />
+                  </svg>
+                  02 février, 2025
+                </time>
+                <h3 class="mini-title">
+                  Courir pendant ses règles, j'y vais ou pas ?
+                </h3>
+                <p class="card-excerpt">
+                  Oh la poisse, j'ai mes règles...La vie est franchement
+                  injuste. Non seulement les filles n'ont pas les...
+                </p>
+              </article>
+              <article class="mini-card">
+                <img
+                  src="assets/images/Image 11.jpg"
+                  class="img ph"
+                  alt="Quelle eau pour le coureur à pied"
+                  width="280"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <time datetime="2025-01-24" class="mini-date">
+                  <svg
+                    class="icon-cal-mini"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                    <path d="M1 6h14M5 1v4M11 1v4" />
+                  </svg>
+                  24 janvier, 2025
+                </time>
+                <h3 class="mini-title">Quelle eau pour le coureur à pied ?</h3>
+                <p class="card-excerpt">
+                  Guide pratique pour bien s'hydrater avant, pendant et après la
+                  course. L'hydratation est un élèment essentiel
+                </p>
+              </article>
+            </div>
+            <button class="carousel-btn next" aria-label="Suivant">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="programme" class="section" aria-labelledby="titre-programme">
+        <div class="container program-grid">
+          <div class="program-card">
+            <h2 id="titre-programme" class="section-kicker">
+              <span>Programme</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 12h18M3 6h10M3 18h10" />
+              </svg>
+            </h2>
+            <h3 class="program-title">
+              Pas besoin d'être un pro pour avoir un plan d'entrainement qui
+              VOUS ressemble !
+            </h3>
+            <p class="program-text">
+              Le bon plan d'entrainement, c'est celui qui correspond à vos
+              besoins, vous fait progresser sans vous blesser et surtout celui
+              qui vous donne envie d'aller courir ! J'ai créé RT.coach pour vous
+              aider à mieux vous entrainer grâce à des programmes individualisés
+              (10 à 42 km, endurance, vitesse, VMA, trail, reprise et plus
+              encore) !
+            </p>
+            <a class="btn btn-green" href="#">Lancer un plan gratuitement</a>
+          </div>
+          <aside class="program-visual">
+            <picture>
+              <source srcset="assets/images/Image 12.webp" type="image/webp" />
+              <img
+                src="assets/images/Image 12.png"
+                alt="Femme courant en nature"
+                class="tall"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <!-- Colonne 1: Must + Boutique + À propos -->
+        <section class="footer-col">
+          <div class="footer-group">
+            <h4>Le must de RunTogether</h4>
+            <ul class="list">
+              <li><a href="#">Conseils incontournables</a></li>
+              <li><a href="#">Conseils débutants</a></li>
+              <li><a href="#">Tests produits</a></li>
+              <li><a href="#">Plans d’entraînements</a></li>
+              <li><a href="#">La newsletter</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>La boutique</h4>
+            <ul class="list">
+              <li><a href="#">Retrouvez mes t‑shirts RunTogether</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>
+              <a href="about.html" class="footer-link-heading">À propos</a>
+            </h4>
+            <p>
+              La course à pied est un sport simple. Avec les bons conseils, on
+              progresse sans se blesser et on garde la motivation. Que tu
+              débutes ou que tu veuilles battre ton record, on t’accompagne.
+            </p>
+          </div>
+        </section>
+
+        <!-- Colonne 2: Blog + Séries vidéos -->
+        <section class="footer-col">
+          <div class="footer-group">
+            <h4>Le blog</h4>
+            <ul class="list">
+              <li><a href="#">Actualités</a></li>
+              <li><a href="#">Portraits de coureurs</a></li>
+              <li><a href="#">Triathlon</a></li>
+              <li><a href="#">Pensée de runner</a></li>
+              <li><a href="#">Mes compétitions</a></li>
+              <li><a href="#">Comment soutenir RunTogether</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>Les séries vidéos</h4>
+            <ul class="list">
+              <li><a href="#">S01 - DARK SIDE</a></li>
+              <li><a href="#">S02 - (IM)PARFAIT</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Colonne 3: Ma plateforme + RunTogether + Suivez-nous -->
+        <section class="footer-col footer-brand">
+          <div class="footer-group">
+            <h4>Ma plateforme</h4>
+            <p>
+              J’ai créé la plateforme <strong>RunTogether</strong> pour aider un
+              maximum de coureurs à mieux s’entraîner. Accédez à des plans
+              personnalisés et adaptés à VOTRE profil, des conseils et ne restez
+              jamais sans réponse à vos questions grâce à la communauté.
+            </p>
+          </div>
+          <div class="footer-group">
+            <h4 class="footer-plain">RunTogether</h4>
+          </div>
+          <div class="footer-group">
+            <h4>Suivez‑nous</h4>
+            <div class="socials">
+              <a href="#" aria-label="Facebook"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M13 10h3V7h-3V6a2 2 0 0 1 2-2h1V1h-2a5 5 0 0 0-5 5v1H8v3h3v10h3z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M23 12s0-3.2-.4-4.6a3 3 0 0 0-2-2C18.9 5 12 5 12 5s-6.9 0-8.6.4a3 3 0 0 0-2 2C1 8.8 1 12 1 12s0 3.2.4 4.6a3 3 0 0 0 2 2C5.1 19 12 19 12 19s6.9 0 8.6-.4a3 3 0 0 0 2-2c.4-1.4.4-4.6.4-4.6zM10 8l6 4-6 4V8z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="X"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 3l7.5 8.1L4 21h3l6-7 6 7h3l-7.6-9 7.1-9h-3l-5.4 6-5.1-6H4z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          2013 – 2025 <strong>RunTogether</strong> | Design et photos : Louis
+          Poulain | <a href="#">Mentions légales</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const track = document.getElementById("track");
+      const prev = document.querySelector(".carousel-btn.prev");
+      const next = document.querySelector(".carousel-btn.next");
+      const prefersReducedMotion =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const behavior = prefersReducedMotion ? "auto" : "smooth";
+      prev &&
+        prev.addEventListener(
+          "click",
+          () => track && track.scrollBy({ left: -320, behavior })
+        );
+      next &&
+        next.addEventListener(
+          "click",
+          () => track && track.scrollBy({ left: 320, behavior })
+        );
+      // Menu burger géré par main.js (classe Navigation)
+      console.log("Menu burger géré par main.js");
+    </script>
+
+    <!-- Scripts pour les fonctionnalités interactives -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Tests (en développement seulement) -->
+    <script>
+      // Chargement conditionnel des tests pour le développement
+      if (
+        location.hostname === "localhost" ||
+        location.hostname === "127.0.0.1"
+      ) {
+        const testScript = document.createElement("script");
+        testScript.src = "tests/main.test.js";
+        testScript.onload = () => {
+          console.log(
+            "🧪 Tests chargés. Tapez runAllTests() dans la console pour exécuter les tests."
+          );
+        };
+        document.head.appendChild(testScript);
+      }
+    </script>
+  </body>
+</html>

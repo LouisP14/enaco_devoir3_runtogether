@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tous les articles – RunTogether" />
+    <title>RunTogether — Articles</title>
+    <link rel="canonical" href="https://www.runtogether.fr/articles.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header" role="banner">
+      <div class="container header-top">
+        <a class="brand" href="index.html" aria-label="Aller à l’accueil">
+          <img
+            src="assets/images/Vector.png"
+            width="60"
+            height="60"
+            alt="Logo RunTogether"
+          />
+          <div class="brand-text">
+            <span class="brand-title">RunTogether</span>
+            <span class="brand-subtitle"
+              >Blog d’un passionné de course à pied</span
+            >
+          </div>
+        </a>
+        <div class="header-actions">
+          <form class="search" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+              />
+            </svg>
+            <label class="visually-hidden" for="q">Rechercher</label>
+            <input
+              id="q"
+              type="search"
+              placeholder="Rechercher"
+              aria-label="Rechercher"
+            />
+          </form>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-principal"
+          >
+            <span class="visually-hidden">Menu</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+          <nav
+            id="nav-principal"
+            class="nav"
+            aria-label="Navigation principale"
+          >
+            <a href="#conseil">Conseil</a>
+            <a href="#programme">Programme</a>
+            <a href="#tests">Test</a>
+            <a href="articles.html" aria-current="page">Articles</a>
+            <a href="about.html">À propos</a>
+            <a href="#contact">Contact</a>
+            <div class="nav-extra" aria-label="Sections complémentaires">
+              <div class="nav-group">
+                <h4 class="nav-group-title">Le must de RunTogether</h4>
+                <ul>
+                  <li><a href="#">Conseils incontournables</a></li>
+                  <li><a href="#">Conseils débutants</a></li>
+                  <li><a href="#">Tests produits</a></li>
+                  <li><a href="#">Plans d’entraînements</a></li>
+                  <li><a href="#">La newsletter</a></li>
+                </ul>
+              </div>
+              <div class="nav-group">
+                <h4 class="nav-group-title">La boutique</h4>
+                <ul>
+                  <li><a href="#">T‑shirts RunTogether</a></li>
+                </ul>
+              </div>
+              <div class="nav-group">
+                <h4 class="nav-group-title">Les séries vidéos</h4>
+                <ul>
+                  <li><a href="#">S01 - DARK SIDE</a></li>
+                  <li><a href="#">S02 - (IM)PARFAIT</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="nav-backdrop" hidden></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="announcement" role="note">
+      <div class="container">
+        <p>
+          <strong>Découvrez les derniers articles !</strong>
+        </p>
+        <p class="announcement-sub">
+          Actus produits, nouveautés, tests...toutes les infos pour votre
+          pratique, sur le matériel, des retours d'expérience, des infos en
+          avant première !
+        </p>
+      </div>
+    </div>
+
+    <main id="contenu" class="site-main">
+      <h1 class="visually-hidden">Tous les articles</h1>
+      <section class="section" aria-labelledby="titre-listing">
+        <div class="container">
+          <h2 id="titre-listing" class="section-kicker">
+            <span>Articles</span
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 12h18M3 6h10M3 18h10" />
+            </svg>
+          </h2>
+          <form
+            class="filters"
+            role="search"
+            style="
+              margin: 16px 0 24px;
+              display: flex;
+              gap: 12px;
+              align-items: center;
+            "
+          >
+            <label for="filtre" class="visually-hidden">Recherche</label>
+            <input
+              id="filtre"
+              name="q"
+              type="search"
+              placeholder="Rechercher un article…"
+              aria-label="Recherche articles"
+              autocomplete="off"
+              style="
+                flex: 1;
+                padding: 10px 14px;
+                border-radius: 999px;
+                border: 1px solid #ccc;
+                font: inherit;
+              "
+            />
+            <button type="submit" class="btn btn-blue">OK</button>
+          </form>
+
+          <!-- Filtrage par catégorie -->
+          <div class="filters">
+            <label
+              for="category-filter"
+              class="form-label"
+              style="margin: 0; font-size: 0.9rem"
+            >
+              Filtrer par catégorie :
+            </label>
+            <select id="category-filter" class="category-select">
+              <option value="all">Toutes les catégories</option>
+            </select>
+          </div>
+
+          <p
+            id="result-count"
+            style="margin: 0 0 20px 0; font-size: 0.9rem; color: #64748b"
+          ></p>
+
+          <!-- Élément pour les annonces d'accessibilité -->
+          <div
+            id="filter-announcer"
+            aria-live="polite"
+            aria-atomic="true"
+          ></div>
+
+          <div class="cards-grid" aria-live="polite">
+            <!-- Carte 1 -->
+            <article class="card" data-category="actu" id="article-list-1">
+              <a class="card-media" href="article.html">
+                <picture>
+                  <source
+                    srcset="assets/images/image 1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/image 1.jpg"
+                    alt="Chaussure Brooks Ghost 17"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <span class="badge badge-green">Actu</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="article.html"
+                    >Découvrez la nouvelle Ghost 17 de chez Brooks</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-06-02">02 juin, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  La Brooks Ghost 17 arrive avec une mousse plus dynamique, un
+                  amorti renforcé à l'avant-pied et un drop...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="article.html">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-1"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 2 -->
+            <article
+              class="card"
+              data-category="actu-produits"
+              id="article-list-2"
+            >
+              <a class="card-media" href="#">
+                <picture>
+                  <source
+                    srcset="assets/images/Image 2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/image 2.jpg"
+                    alt="SCOTT Supertrac RC 3"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <span class="badge badge-green">Actu produits</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >SCOTT Supertrac RC 3 : le test complet par Mathieu</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-05-23">23 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Quand le trail appelle, il faut savoir y répondre avec les
+                  bonnes armes. C'est précisément dans cette...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-2"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 3 -->
+            <article class="card" data-category="a-la-une" id="article-list-3">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 3.jpg"
+                  alt="FORERUNNER 570 et 970"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">À la une</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >FORERUNNER 570 et 970 : l’annonce surprise de GARMIN</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-05-23">23 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Garmin dévoile deux nouvelles montres GPS taillées pour les
+                  coureurs : la Forerunner 570 et la Forerunner...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-3"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 4 -->
+            <article
+              class="card"
+              data-category="entrainement"
+              id="article-list-4"
+            >
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 4.jpg"
+                  alt="Coureurs en pleine nature"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">Entraînement</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Réussir son premier trail : entraînement, équipement,
+                    conseils & erreurs à éviter</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-05-12">12 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Découvre comment réussir ton premier trail grâce à nos
+                  conseils sur l'entrainement, l'équipement essentiel...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-4"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 5 -->
+            <article class="card" data-category="a-la-une" id="article-list-5">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 5.jpg"
+                  alt="Semelle de running"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">À la une</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Semelle de running : le guide complet pour courir mieux,
+                    plus confortablement et sans douleur</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-05-06">06 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Améliorz vos performances et votre conforts avec des semelles
+                  de running adaptées ! Découvrez pourquoi...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-5"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 6 -->
+            <article class="card" data-category="a-la-une" id="article-list-6">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/image 6.jpg"
+                  alt="Résultat Sathoverte 2025"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">À la une</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#">Résultat Sathoverte 2025</a>
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-05-02">02 mai, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Une nouvelle édition vient de se dérouler, c'est le moment des
+                  résultats
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-6"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 7 -->
+            <article class="card" data-category="conseil" id="article-list-7">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/Image 13.jpg"
+                  alt="Bienfaits course santé mentale"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">Conseil</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Syndrome de l'essuie-glace en course à pied : la douleur
+                    externe au genou</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-03-12">12 mars, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Une douleur assez vive te prend sur le côté externe du genou
+                  en courant et te force même à t'arrêter ? Cette douleur te...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-7"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 8 -->
+            <article class="card" data-category="a-la-une" id="article-list-8">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/Image 14.jpg"
+                  alt="Gels énergétiques OVERTIMS"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">À la une</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Kipchoge est sur la fin MAIS son successeur est là !</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-03-10">10 mars, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  SPOILER ALERT : Kipchoge est humain ! Lui aussi fait des
+                  erreurs et il s'est même pris le mur du marathon de Boston !
+                  C'est important...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-8"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 9 -->
+            <article class="card" data-category="nutrition" id="article-list-9">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/Image 15.jpg"
+                  alt="Respiration course à pied"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">Nutrition</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Nutrition pendant la dernière semaine avant un marathon</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-03-02">02 mars, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  On me demande souvent " C'est quoi ton alimentation pour
+                  courir et en particulier la dernière semaine avant un marathon
+                  ? " Alors ?...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-9"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 10 -->
+            <article
+              class="card"
+              data-category="entrainement"
+              id="article-list-10"
+            >
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/Image 16.jpg"
+                  alt="Foulée course à pied"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">Entrainement</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >La rando-course, meilleure alliée du traileur ?</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-02-18">18 février, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  La rando-course, c'est tout simplement sur une même sortie
+                  alterner la marche et la course. Lorsqu'on allonge les
+                  distances ou que le volume de...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-10"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 11 -->
+            <article class="card" data-category="conseil" id="article-list-11">
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/Image 17.jpeg"
+                  alt="Plan entrainement"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">Conseil</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Sensation de fatigue avant l'entrainement, faut-il tout de
+                    même aller s'entrainer ?</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-02-08">08 février, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Vous avez une sensation de fatigue avant l'entrainement et
+                  vous demandez si vous devriez abandonner l'entrainement ou pas
+                  ? Devriez-vous écouter cette petite voix...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-11"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Carte 12 -->
+            <article
+              class="card"
+              data-category="actu-produits"
+              id="article-list-12"
+            >
+              <a class="card-media" href="#">
+                <img
+                  src="assets/images/Image 18.jpg"
+                  alt="Chaussures carbone"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge badge-green">Actu produits</span>
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#"
+                    >Test Nike Zoom Fly 5 : Celle qui devait être la chaussure à
+                    tout faire</a
+                  >
+                </h3>
+                <div class="meta">
+                  <span class="meta-item">
+                    <svg
+                      class="icon-cal-mini"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <rect x="1" y="3" width="14" height="12" rx="2" ry="2" />
+                      <path d="M1 6h14M5 1v4M11 1v4" />
+                    </svg>
+                    <time datetime="2025-02-01">01 février, 2025</time>
+                  </span>
+                </div>
+                <p class="card-excerpt">
+                  Au banc d'essai aujourd'hui, la Nike Zoom Fly 5. Ayant eu et
+                  apprécié les anciennes versions de la Nike Zoom Fly, notamment
+                  la version...
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-blue" href="#">Lire plus</a>
+                  <button
+                    class="article-toggle-btn"
+                    data-article-id="article-list-12"
+                    aria-label="Masquer cet article"
+                  >
+                    Masquer l'article
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <nav
+            class="pagination"
+            aria-label="Pagination"
+            style="
+              display: flex;
+              gap: 12px;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: wrap;
+              margin-top: 32px;
+            "
+          >
+            <a class="btn btn-blue" href="#" aria-disabled="true" tabindex="-1"
+              >Précédent</a
+            >
+            <span aria-current="page" style="font-weight: 600">1</span>
+            <a class="btn btn-blue" href="#">2</a>
+            <a class="btn btn-blue" href="#">3</a>
+            <a class="btn btn-blue" href="#">4</a>
+            <a class="btn btn-blue" href="#">5</a>
+            <a class="btn btn-blue" href="#">6</a>
+            <a class="btn btn-blue" href="#">7</a>
+            <a class="btn btn-blue" href="#">8</a>
+            <a class="btn btn-blue" href="#">9</a>
+            <a class="btn btn-blue" href="#">10</a>
+            <span aria-hidden="true">…</span>
+            <a class="btn btn-blue" href="#">41</a>
+            <a class="btn btn-blue" href="#">Suivant</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <!-- Colonne 1: Must + Boutique + À propos -->
+        <section class="footer-col">
+          <div class="footer-group">
+            <h4>Le must de RunTogether</h4>
+            <ul class="list">
+              <li><a href="#">Conseils incontournables</a></li>
+              <li><a href="#">Conseils débutants</a></li>
+              <li><a href="#">Tests produits</a></li>
+              <li><a href="#">Plans d’entraînements</a></li>
+              <li><a href="#">La newsletter</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>La boutique</h4>
+            <ul class="list">
+              <li><a href="#">Retrouvez mes t‑shirts RunTogether</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>
+              <a href="about.html" class="footer-link-heading">À propos</a>
+            </h4>
+            <p>
+              La course à pied est un sport simple. Avec les bons conseils, on
+              progresse sans se blesser et on garde la motivation. Que tu
+              débutes ou que tu veuilles battre ton record, on t’accompagne.
+            </p>
+          </div>
+        </section>
+
+        <!-- Colonne 2: Blog + Séries vidéos -->
+        <section class="footer-col">
+          <div class="footer-group">
+            <h4>Le blog</h4>
+            <ul class="list">
+              <li><a href="#">Actualités</a></li>
+              <li><a href="#">Portraits de coureurs</a></li>
+              <li><a href="#">Triathlon</a></li>
+              <li><a href="#">Pensée de runner</a></li>
+              <li><a href="#">Mes compétitions</a></li>
+              <li><a href="#">Comment soutenir RunTogether</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>Les séries vidéos</h4>
+            <ul class="list">
+              <li><a href="#">S01 - DARK SIDE</a></li>
+              <li><a href="#">S02 - (IM)PARFAIT</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Colonne 3: Ma plateforme + RunTogether + Suivez-nous -->
+        <section class="footer-col footer-brand">
+          <div class="footer-group">
+            <h4>Ma plateforme</h4>
+            <p>
+              J’ai créé la plateforme <strong>RunTogether</strong> pour aider un
+              maximum de coureurs à mieux s’entraîner. Accédez à des plans
+              personnalisés et adaptés à VOTRE profil, des conseils et ne restez
+              jamais sans réponse à vos questions grâce à la communauté.
+            </p>
+          </div>
+          <div class="footer-group">
+            <h4 class="footer-plain">RunTogether</h4>
+          </div>
+          <div class="footer-group">
+            <h4>Suivez‑nous</h4>
+            <div class="socials">
+              <a href="#" aria-label="Facebook"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M13 10h3V7h-3V6a2 2 0 0 1 2-2h1V1h-2a5 5 0 0 0-5 5v1H8v3h3v10h3z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M23 12s0-3.2-.4-4.6a3 3 0 0 0-2-2C18.9 5 12 5 12 5s-6.9 0-8.6.4a3 3 0 0 0-2 2C1 8.8 1 12 1 12s0 3.2.4 4.6a3 3 0 0 0 2 2C5.1 19 12 19 12 19s6.9 0 8.6-.4a3 3 0 0 0 2-2c.4-1.4.4-4.6.4-4.6zM10 8l6 4-6 4V8z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="X"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 3l7.5 8.1L4 21h3l6-7 6 7h3l-7.6-9 7.1-9h-3l-5.4 6-5.1-6H4z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          2013 – 2025 <strong>RunTogether</strong> | Design et photos : Louis
+          Poulain | <a href="#">Mentions légales</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const track = document.getElementById("track");
+      const prev = document.querySelector(".carousel-btn.prev");
+      const next = document.querySelector(".carousel-btn.next");
+      const prefersReducedMotion =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const behavior = prefersReducedMotion ? "auto" : "smooth";
+      prev &&
+        prev.addEventListener(
+          "click",
+          () => track && track.scrollBy({ left: -320, behavior })
+        );
+      next &&
+        next.addEventListener(
+          "click",
+          () => track && track.scrollBy({ left: 320, behavior })
+        );
+
+      // --- Filtrage recherche articles ---
+      (function () {
+        const form = document.querySelector("form.filters");
+        const input = document.getElementById("filtre");
+        const cardsContainer = document.querySelector(".cards-grid");
+        const cards = Array.from(cardsContainer.querySelectorAll(".card"));
+        const resultCount = document.getElementById("result-count");
+
+        function normalize(str) {
+          return str
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/\p{Diacritic}/gu, "");
+        }
+
+        function update() {
+          const qRaw = input.value.trim();
+          if (!qRaw) {
+            cards.forEach((c) => {
+              c.style.display = "";
+            });
+            resultCount.textContent = "";
+            return;
+          }
+          const q = normalize(qRaw);
+          let visible = 0;
+          cards.forEach((card) => {
+            const titleEl = card.querySelector(".card-title");
+            const excerptEl = card.querySelector(".card-excerpt");
+            const hay = normalize(
+              (titleEl?.textContent || "") +
+                " " +
+                (excerptEl?.textContent || "")
+            );
+            if (hay.includes(q)) {
+              card.style.display = "";
+              visible++;
+            } else {
+              card.style.display = "none";
+            }
+          });
+          resultCount.textContent =
+            visible === 0
+              ? "Aucun article trouvé"
+              : `${visible} article${visible > 1 ? "s" : ""}`;
+        }
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          update();
+        });
+        input.addEventListener("input", update);
+      })();
+      // Menu burger géré par main.js (classe Navigation)
+      console.log("Menu burger géré par main.js");
+    </script>
+
+    <!-- Scripts pour les fonctionnalités interactives -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

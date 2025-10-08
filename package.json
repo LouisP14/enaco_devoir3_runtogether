@@ -1,0 +1,33 @@
+{
+  "name": "runtogether-blog",
+  "version": "1.0.0",
+  "description": "Blog RunTogether - Fonctionnalités interactives avec JavaScript éco-conçu",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "test": "node tests/main.test.js",
+    "test:browser": "echo 'Ouvrez index.html dans votre navigateur et ouvrez la console pour voir les tests'",
+    "dev": "echo 'Serveur de développement - utilisez Live Server ou servez les fichiers HTML'",
+    "validate": "echo 'Validation du code JavaScript' && node -c assets/js/main.js && node -c tests/main.test.js"
+  },
+  "keywords": [
+    "blog",
+    "running",
+    "javascript",
+    "eco-design",
+    "performance",
+    "accessibility"
+  ],
+  "author": "Équipe RunTogether",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "> 1%",
+    "last 2 versions"
+  ]
+}
